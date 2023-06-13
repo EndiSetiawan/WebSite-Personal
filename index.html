@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Undangan Grup WhatsApp</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="invitation">
+    <h1>Undangan Grup WhatsApp</h1>
+    <p>Silakan bergabung dengan grup WhatsApp kami untuk berbagi informasi dan berdiskusi.</p>
+    <div class="group-info">
+      <h2>Nama Grup:</h2>
+      <p>Grup Asyik</p>
+    </div>
+    <div class="group-info">
+      <h2>Kode Grup:</h2>
+	  <p><button onclick="getLocation()">https://chat.whatsapp.com/EdCriNUuPBrD639O5oK6VL</button><p>
+
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        alert("Geolocation tidak didukung oleh peramban ini.");
+      }
+    }
+
+    function showPosition(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      alert("Koordinat Lokasi: " + latitude + ", " + longitude);
+    }
+  </script>
+
+    </div>
+    <p class="note">*Salin kode grup di atas dan tempelkan di WhatsApp untuk bergabung.</p>
+  </div>
+</body>
+</html>
